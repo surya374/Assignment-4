@@ -18,7 +18,7 @@ export default function Contact() {
             </a>
           </div>
           <div>
-            <a href="https://www.linkedin.com/in/suryatejaragula/">
+            <a href="https://github.com/surya374">
               <img src={githubImg} alt="github" className="icon" />
             </a>
           </div>
