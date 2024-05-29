@@ -125,7 +125,7 @@ h1 {
 }
 
 .Education-container {
-  opacity: 0; /* Start with hidden text */
+  opacity: 0; 
   animation: pop-in 1s ease-in-out forwards;
 }
 
@@ -133,11 +133,11 @@ h1 {
   from {
     opacity: 0;
     transform: scale(0.8);
-  } /* Start with hidden and scaled down */
+  } 
   to {
     opacity: 1;
     transform: scale(1);
-  } /* Animate to opacity 1 and normal scale */
+  } 
 }
 
 .col header.title {
@@ -249,10 +249,10 @@ h1 {
 @keyframes rotate {
   from {
     transform: rotate(0deg);
-  } /* Start with no rotation */
+  } 
   to {
     transform: rotate(360deg);
-  } /* Rotate 360 degrees */
+  } 
 }
 
 .projects {
