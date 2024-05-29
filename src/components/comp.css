@@ -1,0 +1,311 @@
+body {
+  background-color: rgb(8, 7, 7);
+  color: white;
+}
+
+.navbar-container {
+  display: flex;
+  background-color: #eecf06;
+  justify-content: space-between;
+  color: rgb(14, 13, 13);
+}
+
+h1 {
+  margin-left: 20px;
+  color: #0f0f0f;
+}
+
+.catageory {
+  margin-top: 30px;
+  margin-right: 20px;
+  align-items: flex-end;
+}
+
+.link {
+  padding: 10px;
+  color: rgb(6, 6, 6);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  font-size: 40px;
+  align-items: center;
+}
+
+.home-container {
+  color: gainsboro;
+  margin-top: 40px;
+  margin-left: 100px;
+}
+
+.name-h2 {
+  font-size: 40px;
+  animation: typing 5s;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.role-h4 {
+  font-size: 20px;
+}
+
+.image {
+  float: right;
+  width: 70%;
+  height: 100px;
+}
+
+.About-container {
+  font-size: 30px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  margin-top: 100px;
+  padding: 10 10 10 10;
+  margin-left: 10px;
+}
+
+.about-heading {
+  border-right: 2px solid white;
+  height: 300px;
+  font-size: 30px;
+  padding: 10px 20px 0px 10px;
+  margin: 10px 20px 0 -10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.About-para {
+  opacity: 0;
+  font-size: 25px;
+  margin-right: 20px;
+  transform: translateY(200px);
+  animation: slide-in-top 2s ease-in forwards;
+  word-spacing: 3px;
+  width: 1210px;
+  text-align: justify;
+}
+
+@keyframes slide-in-top {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-image {
+  height: 12.5rem;
+  width: 12.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Education-container {
+  width: 80%;
+  padding: 35px 10%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.Education-container {
+  opacity: 0; /* Start with hidden text */
+  animation: pop-in 1s ease-in-out forwards;
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  } /* Start with hidden and scaled down */
+  to {
+    opacity: 1;
+    transform: scale(1);
+  } /* Animate to opacity 1 and normal scale */
+}
+
+.col header.title {
+  font-family: helvetica;
+  color: #11a372;
+  padding: 0px 0px 20px 30px;
+}
+
+.col .content {
+  padding: 0px 30px;
+  border-left: 2px solid #bababa;
+}
+
+.col .content .box {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eaeaea;
+  background-color: #151515;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 20px;
+}
+
+.col .content .box:hover {
+  box-shadow: 0px 3px 12px 0px #eceaea;
+  border: 1px solid transparent;
+}
+
+.col .content .box::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-top: -14px;
+  right: 1112px;
+  top: 1;
+  background-color: #11a372;
+  border: 2px solid rgb(235, 232, 232);
+}
+
+.box h4 {
+  position: relative;
+  color: #11a372;
+}
+
+.box h2 {
+  font-size: 20px;
+  font-family: helvetica;
+  padding: 10px 0px 6px;
+  color: #c6c2c2;
+}
+
+.box p {
+  line-height: 1.2;
+  color: #dfff00;
+  font-size: 17px;
+}
+
+.box h9 {
+  font-size: 20px;
+  font-family: Helvetica;
+  padding: 10px 0px 6px;
+  color: #b1ddf1;
+}
+
+.skills {
+  max-width: 60.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skill-header {
+  margin-bottom: 1rem;
+}
+
+.skill-icons img {
+  padding: 1.25rem;
+}
+
+.animated {
+  width: 100%;
+  background-color: white;
+  display: inline-flex;
+  margin-left: -35px;
+  border-radius: 6px;
+}
+
+.icon-card {
+  width: 12.875rem;
+  height: 12.25rem;
+}
+.icon-cards {
+  width: 19.875rem;
+  height: 12.25rem;
+  margin-left: -60px;
+}
+
+.icon-card2 {
+  width: 12.875rem;
+  height: 12.25rem;
+}
+
+.icon-cards {
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  } /* Start with no rotation */
+  to {
+    transform: rotate(360deg);
+  } /* Rotate 360 degrees */
+}
+
+.projects {
+  padding: 32px 0;
+}
+
+.projects-title {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.project-image {
+  width: 75%;
+  height: 60%;
+}
+
+.project-title a {
+  color: #096afbe1;
+  text-decoration: none;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.project-details {
+  width: 450px;
+  text-align: justify;
+}
+
+.contact-container {
+  max-width: 60.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.contact-heading {
+  margin-bottom: 1rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  margin: 20px;
+}
